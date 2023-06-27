@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment-6</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Bodoni+Moda:ital@1&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+        <style>
+            body{
+                margin: 0;
+            }
+            header{
+                background-color: rgb(235, 235, 235);
+                height: 75px;
+                padding: 10px 15px;
+                position: sticky;
+                top: 0;
+            }
+            header>img{
+                float: left;
+                width: 350px;
+                height: 70px;
+            }
+            header>nav{
+                float: right;
+                font-family: 'Barlow', sans-serif;
+                font-family: 'Bodoni Moda', serif;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 700;
+            }
+            header>nav a{
+                text-decoration: none;
+                text-transform: uppercase;
+                color: black;
+                padding: 15px 15px;
+                display:inline-block;
+                margin-top: 15px;
+            }
+            header>nav a:hover{
+                background-color: antiquewhite;   
+                border-radius: 2px;    
+            }
+            #first{
+                background-image: linear-gradient(rgb(0, 0, 0,0.2),rgb(0, 0, 0,0.2)) ,url(realMap.jpg);
+                background-position: center;
+                background-size: cover;
+                color: white;
+                text-align: center;
+                padding: 200px 100px;
+                font-size: 30px;
+            }
+            #first p{
+                font-family: 'Barlow', sans-serif;
+                font-family: 'Bodoni Moda', serif;
+                font-family: 'Roboto', sans-serif;
+            }
+            #first button{
+                color: #1d214e;
+                background-color: antiquewhite;
+                border: none;
+                text-transform: uppercase;
+                font-weight:bolder;
+                width: 150px;
+                height: 40px;
+                border-radius: 2px;  
+                font-family: 'Barlow', sans-serif;
+                font-family: 'Bodoni Moda', serif;
+                font-family: 'Roboto', sans-serif;  
+            }
+            #second{
+                text-align: center;
+                padding: 4% 28%;
+                margin-bottom: 20px;
+            }
+            #second>div span{
+                font-weight: bolder;
+                color: #1d214e;
+            }
+            #second button{
+                color: white;
+                background-color: #1d214e;
+                border: none;
+                height: 40px;
+                width: 200px;
+                border-radius: 3px;
+                text-transform: uppercase;
+                margin-top: 5px;
+                font-family: 'Barlow', sans-serif;
+                font-family: 'Bodoni Moda', serif;
+                font-family: 'Roboto', sans-serif;
+            }
+            #second p{
+                font-family: 'Barlow', sans-serif;
+                font-family: 'Bodoni Moda', serif;
+                font-family: 'Roboto', sans-serif;
+            }
+            #second h1{
+                font-size: 30px;
+            }
+            #third{
+                background-image: url(mac.jpg);
+                background-position: bottom -340px right 0px;
+                background-size: cover;
+                text-align: center;
+                text-transform: capitalize;
+                padding: 170px;
+                font-size: 30px;
+                color: white;
+            }
+            #fourth{
+                padding: 80px 0px 20px 350px;
+            }
+            #fourth>div{
+                display: inline-block;
+                width: 330px;
+                text-align: center;
+                vertical-align: top;
+                margin-right: 120px;
+            }
+            #fourth img{
+                width: 25px;
+            }
+            #fourth>div #bo{
+                border: solid 5px antiquewhite;
+                z-index: 0;
+                padding: 10px;
+            }
+            #fourth button{
+                background-color: #1d214e;
+                border: none;
+                color: white;
+                border-radius: 3px;
+                height: 40px;
+                width: 400px;
+                margin-left: 220px;
+                font-family: 'Barlow', sans-serif;
+                font-family: 'Bodoni Moda', serif;
+                font-family: 'Roboto', sans-serif;
+
+            }
+            #fourth>div{
+                background-image: url(quotation.jpg);
+                background-position: top;
+                background-repeat: no-repeat;
+                background-size: 30px;
+                padding: 7px;
+                z-index: 1;
+            }#fourth h5{
+                color: gray;
+            }
+            #fifth{
+                background-color: antiquewhite;
+                text-align: center;
+                height: 75px;
+            }
+            #fifth h1{
+                float: left;
+                margin-left: 370px;
+                color: #1d214e;
+
+            }
+            #fifth button{
+                float: right;
+                color: white;
+                background-color: #1d214e;
+                margin-right: 370px;
+                margin-top: 25px;
+                border: none;
+                border-radius: 3px;
+                height: 30px;
+                font-family: 'Barlow', sans-serif;
+                font-family: 'Bodoni Moda', serif;
+                font-family: 'Roboto', sans-serif;
+            }
+            footer{
+                background-color: #1d214e;
+                font-family: 'Barlow', sans-serif;
+                font-family: 'Bodoni Moda', serif;
+                font-family: 'Roboto', sans-serif;
+            }
+            footer #search{
+                text-align: center;
+                padding: 50px 70px 10px 70px;
+            }
+            footer input{
+                width: 800px;
+                height: 30px;
+                background-color: #1d214e;
+                border-color:  rgb(202, 202, 202);
+            }          
+            footer::placeholder{
+                color: rgb(202, 202, 202);
+            }
+            #main{
+                text-align: center;
+            }
+            #main div{
+                display: inline-block;
+                width: 150px;
+                text-align: left;
+                padding: 30px 20px;
+                height: 200px;
+                vertical-align: top;
+                text-transform: uppercase;
+                color: rgb(202, 202, 202);
+            }
+            #main h3,iframe{
+                margin-top: 40px;
+            }
+            #main img{
+                width: 30px;
+                margin-right: 5px;
+            }
+            hr{
+                border: 1px solid rgb(202, 202, 202);
+            }
+            #main>#a a{
+                color: rgb(202, 202, 202);
+                float: left;
+                margin: 0 30px 15px 0;
+                text-decoration: none;
+                border-bottom: 1px solid rgb(202, 202, 202);
+            }
+            #a>hr+a{
+                padding-top: 40px;
+            }
+            #contact a{
+                color: rgb(202, 202, 202);
+                text-decoration: none;
+            }
+            #email{
+                border-bottom: thick double rgb(202, 202, 202);
+            }
+            #main~div{
+                text-align: center;
+                color: rgb(202, 202, 202);
+                padding: 20px;
+            }
+            #main~div a{
+                border-bottom: solid 1px rgb(202, 202, 202);
+                color: rgb(202, 202, 202);
+                text-decoration: none;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+                <img src="divittorio.png" alt="">
+                <nav>
+                    <a href="">about</a>
+                    <a href="">portfolio</a>
+                    <a href="">services</a>
+                    <a href="">blogs</a>
+                    <a href="">get started</a>
+                </nav>    
+        </header>
+        <section id="first">
+            <div>
+            <h1>Classic. Timeless. Chic.</h1>
+            <p>
+                Brings your visions and spaces to life through architecture and design.
+            </p>
+            <button>get started &#8594;</button>
+            </div>
+        </section>
+        <section id="second">
+            <div>
+                <h1>Our Mission</h1>
+                <p>
+                    is to bring our client's visions to life through architecture and design. We collaborate with our homeowners to create their dream home; one that is <span>timeless, unique, and truly theirs.</span>
+                </p>
+                <button>see the portfolio &#8594</button>
+            </div>
+        </section>
+        <section id="third">
+            <h1>happy clients</h1>
+        </section>
+        <section id="fourth">
+            <div>
+                <div id="bo">
+                <p>
+                    Danille is absolutely amazing. she worked with us on ourremodel and was very professional from start to finish. She was very detailed and takes much pride in her work. She is a true talent at what she does we never had to change a thing on our plans, we told her what we wanted and she delivered. You will never find anyone easier to work and has such amazing talent. We highly recommend her for all your architecture and desigh needs. 
+                </p>
+            </div>
+                <h5>-Lisa Vinciguerra Taormina</h5>
+            </div>
+            <div>
+                <div id="bo">
+                <p>
+                    Danielle was absolutely amazing. She is so good at what she does-an outstanding architect. She did an execellent job of creating our home remodel beutifully and also making sure everything was to code and permitted. Danielle is a gem and you WILL NOT find anyone better. Recommend 100% with no reservation.                  
+                </p>
+            </div>
+                <h5>-Christine Nangle Koehl</h5>
+            </div>
+            <button>READ MORE TESTIMONIALS ON OUR FACEFOOK PAGE ></button>
+        </section>
+        <section id="fifth">
+            <h1>Your new home awaits.</h1>
+            <button>START THE PROCESS &#8594;</button>
+        </section>
+        <footer>
+           <section id="search">
+            <input type="text" placeholder="&#128269; Search">
+           </section>
+           <section id="main">
+            <div>
+                <hr>
+                <h3>get social:</h3>
+                <img src="facebook.png" alt="">
+                <img src="instagram.png" alt="">
+                <img src="youtube.png" alt="">
+            </div>
+            <div>
+                <hr>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13115.575158768583!2d77.5200158!3d28.47264904144606!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cea606a633b0f%3A0xf082b9fe18f63707!2sOh*21Max%20Wonderland!5e1!3m2!1sen!2sin!4v1687280775818!5m2!1sen!2sin" width="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div id="a">
+                <hr>
+                <a href="">about</a>
+                <a href="">portfolio</a>
+                <a href="">services</a>
+                <a href="">blog</a>
+                <a href="">get started</a>
+            </div>
+            <div id="contact">
+                <hr>
+                <h3>contact:</h3>
+                 <a href="tel:4086550565">408.655.0565 |</a>
+                 <a id="email" href="mailto:D_DIVITTORIO@yahoo.com">D_DIVITTORIO@YAHOO.COM</a>
+            </div>
+           </section>
+           <hr>
+           <div>
+            <p>
+                TERMS AND CONDITIONS | branding + site design by <a href="">MKW GRAPHICS</a>
+            </p>
+           </div>
+        </footer>
+    </body>
+</html>
